@@ -1,0 +1,63 @@
+
+//current code:
+// javascript
+
+let enterAge = prompt("Enter age: ");
+
+let oldEnough = (enterAge > 18) ? "yes": "no"; //"yes and no" and also be (enterAge > 18) ? true: false;
+
+console.log(oldEnough);
+
+//new:
+// javascript
+
+let name = prompt("Enter name: ");
+
+let response = (name.length < 4) ? "short name mate": (name.length < 10) ? "decent size name mate": (name.length < 20) ? "quite the name mate":"names eh?";
+
+console.log(response);
+
+//new:
+// javascript
+
+/*Using if..else, write the code which gets a number via prompt and then shows in alert:
+
+1, if the value is greater than zero,
+-1, if less than zero,
+0, if equals zero.
+In this task we assume that the input is always a number.*/
+
+let number = prompt("Enter number: ");
+
+let response = (number > 0) ? "1": (number < 0) ? "-1": (number == 0) ? "0": "NaN";
+
+alert(response); 
+
+//new: 
+// javascript
+
+/*
+Rewrite if..else using multiple ternary operators '?'.
+
+For readability, it’s recommended to split the code into multiple lines.
+
+let message;
+
+if (login == 'Employee') {
+  message = 'Hello';
+} else if (login == 'Director') {
+  message = 'Greetings';
+} else if (login == '') {
+  message = 'No login';
+} else {
+  message = '';
+}
+*/ 
+
+"Use Strict";//strict mode
+
+let login = prompt("Enter login: ");
+
+let message = (login == "Employee") ? "Hello": (login == "Director") ? "Greetings": (login == " ") ? "No login": " ";
+
+console.log(message);
