@@ -61,3 +61,45 @@ let login = prompt("Enter login: ");
 let message = (login == "Employee") ? "Hello": (login == "Director") ? "Greetings": (login == " ") ? "No login": " ";
 
 console.log(message);
+
+//NEW:
+"use strict";
+
+const obj = {
+    firstName: "Aaron",
+    lastName: "Baraiya",
+
+    address: {
+        street: "6739 morganite court",
+        city: "Mira Loma",
+        state: "California",
+        country: "United States"
+    },
+
+    career: {
+        title: "Software Developer",
+        position: "Backend",
+        experience: "4 years"
+    }
+};
+
+
+
+let personOne = new Object();
+
+personOne.name = obj.firstName;
+personOne.location = obj.address;
+personOne.ocupation = obj.career;
+
+function greetPerson() {
+    if((personOne.name == "Aaron")) {
+        console.log("Helllo Aaron");
+    }
+    else {
+        console.log("Hello");
+    }
+}
+
+console.log("Person One Details: ");
+console.log(personOne);
+console.log(greetPerson());
