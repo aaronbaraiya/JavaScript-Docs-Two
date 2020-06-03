@@ -155,3 +155,27 @@ console.log(typeof number);//number
 console.log(numberObject instanceof Number);//true
 console.log(letters instanceof String);//true
 console.log(number instanceof Number);//false
+
+//NEW:
+// javascript
+//Boolean Values
+//only use to convert values into boolean, never to use as wrapper as primitive type
+let valueOne = true;
+let valueTwo = false;
+
+let a = Boolean("A");
+let b = new Boolean(true);
+let obj = new Boolean(false);
+
+console.log(a);//logs true
+console.log(b);//logs boolean
+console.log(typeof (valueOne));//logs boolean
+console.log(typeof(valueTwo));//logs boolean
+console.log(typeof(a));//logs boolean
+console.log(b.valueOf());//false 
+console.log(b.toString());//logs true or false in string 
+obj.primitiveValue = obj.valueOf();//logs what is in obj's ()
+console.log(obj.primitiveValue);//logs false
+console.log(typeof(obj));//logs object
+console.log(valueOne instanceof Boolean);//logs false because not of Boolean object
+console.log(obj instanceof Boolean);//logs true
