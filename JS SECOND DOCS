@@ -103,3 +103,55 @@ function greetPerson() {
 console.log("Person One Details: ");
 console.log(personOne);
 console.log(greetPerson());
+
+
+//NEW:
+// javascript
+
+
+//toFixed()
+let num = 20.0045;
+console.log(num.toFixed(3)); //rounds to decimal place
+
+//toExponential
+let x = 10;
+let y = 100;
+let z = 1000;
+
+function examineNum() {
+    if((x == "1e+1")) {
+        console.log("TO ONE EXPONENTIAL");
+    }
+    else {
+        console.log("NaN");
+    }
+}
+
+console.log(x.toExponential());
+console.log(y.toExponential());
+console.log(z.toExponential());
+examineNum();//to not have a underfined
+
+/*
+toPresicion, string rep of numbers in exp notation, or rounded digits
+will show that number of digits given
+*/
+
+let numX = 4.125;
+numX = 123.5;
+
+console.log(numX.toPrecision(2));
+
+/*instance of
+checks the instanceof an object or something or the sort
+it is a verifier 
+*/
+let numberObject = new Number(10);
+let letters = new String("num");
+let number = 10;
+
+console.log(typeof numberObject);//object
+console.log(typeof number);//number
+console.log(numberObject instanceof Number);//true
+console.log(letters instanceof String);//true
+console.log(number instanceof Number);//false
